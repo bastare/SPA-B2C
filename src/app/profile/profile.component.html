@@ -1,0 +1,13 @@
+<div>
+  <mat-card class='card-section'>
+    <p style="word-break: break-all; padding: 20px;">{{token}}</p>
+  </mat-card>
+
+  <mat-card class='card-section'>
+    <input type="text" [(ngModel)]="root">
+
+    <button type=" submit" (click)="getData()">Press</button>
+
+    <p style="word-break: break-all; padding: 20px;">{{res | json}}</p>
+  </mat-card>
+</div>
