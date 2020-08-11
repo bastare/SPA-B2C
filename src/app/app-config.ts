@@ -46,7 +46,7 @@ export const b2cPolicies = {
  * The current application coordinates were pre-registered in a B2C tenant.
  */
 export const apiConfig: { b2cScopes: string[]; webApi: string } = {
-  b2cScopes: ['https://udscustomersdirectory.onmicrosoft.com/webapi/user_impersonation'],
+  b2cScopes: ['https://udscustomersdirectory.onmicrosoft.com/api/user_impersonation'],
   webApi: 'https://localhost:44310/api/migration-job'
 };
 // #endregion
@@ -58,7 +58,7 @@ export const apiConfig: { b2cScopes: string[]; webApi: string } = {
  */
 export const msalConfig: Configuration = {
   auth: {
-    clientId: '0497bb81-2c80-4419-b857-5bf651bb4e88',
+    clientId: 'a9b6734d-d7e4-42c1-b3ec-817e2f72d87d',
     authority: b2cPolicies.authorities.signUpSignIn.authority,
     redirectUri: 'http://localhost:6420/',
     postLogoutRedirectUri: 'http://localhost:6420/',
